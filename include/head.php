@@ -1,6 +1,6 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>ABITEQ</title>
+    <title>somewhere</title>
     <meta name="robots" content="all">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Advokatur und Treuhand am Falkenstein">
@@ -30,5 +30,4 @@
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400" rel="stylesheet">

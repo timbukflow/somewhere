@@ -7,20 +7,23 @@
 
 <body>
     
-    <?php $page = 'home'; include 'include/header.php'; ?>
+    <?php include 'include/header.php'; ?>
     
-    <div class="one">
-        
-        <div class="topimg">
-            <div class="topimggggg"></div>
-        </div>
-        
+    <div class="container">
+        <h2>&#8250; Simeulue<span> 19.7.2017</span></h2>
+        <img src="img/simeulue-01.jpg" alt="simeulue">
+        <img src="img/simeulue-02.jpg" alt="simeulue">
+        <img src="img/simeulue-03.jpg" alt="simeulue">
+        <img src="img/simeulue-04.jpg" alt="simeulue">
+        <img src="img/simeulue-05.jpg" alt="simeulue">
     </div>
-    <div class="two">
-        <h1></h1>
-    </div>
-    <div class="three">
-        <h1></h1>
+    
+    <div class="container">
+        <h2>&#8250; Lago d’Alzasca<span> 9.6.2018</span></h2>
+        <img src="img/tessin-01.jpg" alt="tessin">
+        <img src="img/tessin-02.jpg" alt="tessin">
+        <img src="img/tessin-03.jpg" alt="tessin">
+        <img src="img/tessin-04.jpg" alt="tessin">
     </div>
     
     <?php include 'include/footer.php'; ?>

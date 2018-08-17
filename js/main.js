@@ -1,17 +1,24 @@
 $(document).ready(function () {
 
    $(window).scroll(function() {
-        $('.two').each(function() {
+        $('img').each(function(i) {
             var bottom_of_object = $(this).offset().top;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             if( bottom_of_window > bottom_of_object ) {
-                $('.inview').addClass('inview-fade');
+                $(this).addClass('inview-fade');
             } else {
-                $('.inview').removeClass('inview-fade');
+                $(this).removeClass('inview-fade');
             }
         }); 
-    });
+    }).scroll();
+    
+    $('.button').click(function() {
+        $('img').toggleClass('grayscale')
+        $('body').toggleClass('black')
+        $('.button').toggleClass('button-white')
+        $('img').toggleClass('grid-two')
+    })
     
 });
 
