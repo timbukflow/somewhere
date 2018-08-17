@@ -12,27 +12,36 @@
     </div>
     
     <div class="secondnav">
-        <div class="buttonshowroom tooltip">
-        <p class="tooltiptext">showroom</p>
+        <a href="#" id="buttonshowroom" class="button tooltip">
+            <p class="tooltiptext">showroom</p>
+        </a>
+        <div id="buttongrid" class="button tooltip">
+            <p class="tooltiptext">grid</p>
         </div>
     </div>
     
-    
-    <div class="container">
-        <h2>&#8250; Simeulue<span> 19.7.2017</span></h2>
-        <img src="img/simeulue-01.jpg" alt="simeulue">
-        <img src="img/simeulue-02.jpg" alt="simeulue">
-        <img src="img/simeulue-03.jpg" alt="simeulue">
-        <img src="img/simeulue-04.jpg" alt="simeulue">
-        <img src="img/simeulue-05.jpg" alt="simeulue">
-    </div>
-    
-    <div class="container">
-        <h2>&#8250; Lago d’Alzasca<span> 9.6.2018</span></h2>
-        <img src="img/tessin-01.jpg" alt="tessin">
-        <img src="img/tessin-02.jpg" alt="tessin">
-        <img src="img/tessin-03.jpg" alt="tessin">
-        <img src="img/tessin-04.jpg" alt="tessin">
+    <div class="main-container">
+        <div class="container-title">
+            <h1>Simeulue <span>Indonesien</span><span class="data-hidden"><br>19.07.2017</span></h1>
+        </div>
+        <div class="container-img">
+            <a href="#i1"><img id="i1" src="img/simeulue-01.jpg" alt="simeulue"></a>
+            <a href="#i2"><img id="i2" src="img/simeulue-02.jpg" alt="simeulue"></a>
+            <a href="#i3"><img id="i3" src="img/simeulue-03.jpg" alt="simeulue"></a>
+            <a href="#i4"><img id="i4" src="img/simeulue-04.jpg" alt="simeulue"></a>
+            <a href="#i5"><img id="i5" src="img/simeulue-05.jpg" alt="simeulue"></a>
+        </div>
+        
+        <div class="container-title">
+            <h1>Lago d’Alzasca <span>Switzerland</span><span class="data-hidden"><br>09.06.2018</span></h1>
+        </div>
+        <div class="container-img">
+            <a href="#i6"><img id="i6" src="img/tessin-01.jpg" alt="tessin"></a>
+            <a href="#i7"><img id="i7" src="img/tessin-02.jpg" alt="tessin"></a>
+            <a href="#i8"><img id="i8" src="img/tessin-03.jpg" alt="tessin"></a>
+            <a href="#i9"><img id="i9" src="img/tessin-04.jpg" alt="tessin"></a>
+            <p class="description">Takimata ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea </p>
+        </div>
     </div>
     
     <?php include 'include/footer.php'; ?>

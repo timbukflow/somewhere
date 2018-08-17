@@ -105,6 +105,27 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+h1, p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    line-height: 1.4em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-left: 6px;
+    color: rgb(30, 30, 30);
+}
+
+h1 span {
+    color: rgb(180, 180, 180);  
+}
+
+p {
+    margin-bottom: 60px;
+    padding-right: 40%;
+    padding-left: 20px;
+}
+
 
 /* ==========================================================================
    Navigation Top
@@ -130,110 +151,136 @@ textarea {
 
 .secondnav {
     width: 100%;
+    height: 50px;
     text-align: center;
     position: fixed;
     z-index: 99;
-    bottom: 30px;
+    bottom: 0;
 }
 
-.buttonshowroom {
-    width: 20px;
-    height: 20px;
+.button {
+    width: 15px;
+    height: 15px;
     background-color: black;
     border-radius: 100%;
-    margin: 0 auto;
     cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin: 0px 10px;
+    top: 50px;
+    transition: top 0.5s ease-in-out;
+}
+
+.secondnav:hover .button{
+    top: 0px;
+}
+
+/* === button js function == */
+
+.buttonred {
+    background-color: red;
+}
+
+.background-gray {
+    background-color: gray;
+}
+
+.logowhite {
+    filter: invert(100%);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.grid-two {
+    width: 33%;
+    float: left;
+    padding: 0px 10px;
 }
 
 /* === tooltip start === */
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
     color: black;
-    text-align: center;
-    position: absolute;
+    position: relative;
     z-index: 1;
-    bottom: 10px;
-    left: 50%;
-    margin-left: -60px;
+    bottom: 31px;
+    right: 7px;
+    transform: rotate(-90deg);
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
 
+/* ==========================================================================
+   Container Main
+   ========================================================================== */
 
-/* === tooltip end === */
-
-.button-white {
-    background-color: white;
+.main-container {
+    width: 80%;
+    margin: 200px 10%;
 }
 
-.black{
-    background-color: gray;
-}
+/* ==========================================================================
+   Container Title
+   ========================================================================== */
 
-
-
-
-
-h1 {
-    font-family: 'Lora', serif;
-    font-size: 20px;
-    letter-spacing: 12px;
-    font-weight: normal;
-    margin-bottom: 10px;
-    padding-left: 6px;
-}
-
-h2 {
-    font-family: 'Lora', serif;
-    font-size: 16px;
-    letter-spacing: 1.75px;
+.container-title {
+    width: 100%;
     text-align: right;
-    font-weight: lighter;
-    padding-right: 10px;
+    display: inline-block;
+    padding: 0px 10px;
 }
 
-h2 span {
-    color: rgba(0, 0, 0, 0.5);
+.data-hidden {
+    display: none;
 }
 
-.container {
-    margin: auto;
-    margin-top: 190px;
-    width: 80%;  
+/* ==========================================================================
+   Container Image
+   ========================================================================== */
+
+.container-img {
+    width: 100%; 
+    margin-bottom: 100px;
 }
 
 img {
-    margin-bottom: 30px;
     width: 100%;
+    margin-bottom: 30px;  
     position: relative;
-    z-index: 1;
-    opacity: 0.1;
-    top: 100px;
-    -webkit-transition: opacity 2s ease-in-out, top 2s ease-in-out;
-    transition:         opacity 2s ease-in-out, top 2s ease-in-out;
-    
+    z-index: 1; 
 }
 
-.grid-two{
-    width: 50%;
-    float: left;
-    
+/* ==========================================================================
+   Link styling
+   ========================================================================== */
+
+a {
+    text-decoration: none;
 }
 
-.inview-fade {
-    opacity: 1;
-    top: 0;
+a:link {
+    color: red;
 }
 
-.grayscale {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+
+a:visited {
+    color: green;
 }
 
+
+a:hover {
+    color: hotpink;
+}
+
+
+a:active {
+    color: blue;
+}
 
 
 
