@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
    $(window).scroll(function() {
-        $('img').each(function(i) {
+        $('.container').children('img').each(function(i) {
             var bottom_of_object = $(this).offset().top;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
@@ -13,11 +13,12 @@ $(document).ready(function () {
         }); 
     }).scroll();
     
-    $('.button').click(function() {
+    
+    
+    
+    $('.buttonshowroom').click(function() {
         $('img').toggleClass('grayscale')
         $('body').toggleClass('black')
-        $('.button').toggleClass('button-white')
-        $('img').toggleClass('grid-two')
     })
     
 });

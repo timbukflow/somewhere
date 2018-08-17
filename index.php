@@ -7,7 +7,16 @@
 
 <body>
     
-    <?php include 'include/header.php'; ?>
+    <div class="topnav">  
+        <img id="logo" src="img/logo.svg" alt="somewhere-logo">
+    </div>
+    
+    <div class="secondnav">
+        <div class="buttonshowroom tooltip">
+        <p class="tooltiptext">showroom</p>
+        </div>
+    </div>
+    
     
     <div class="container">
         <h2>&#8250; Simeulue<span> 19.7.2017</span></h2>

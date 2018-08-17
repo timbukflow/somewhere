@@ -104,29 +104,77 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-* {
-    box-sizing: border-box;
+
+
+/* ==========================================================================
+   Navigation Top
+   ========================================================================== */
+
+.topnav {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+}
+
+#logo {
+    width: 100px;
+    opacity: 1;
+    top: 50px;
+}
+
+/* ==========================================================================
+   Navigation Bottom
+   ========================================================================== */
+
+.secondnav {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 99;
+    bottom: 30px;
+}
+
+.buttonshowroom {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* === tooltip start === */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    color: black;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* === tooltip end === */
+
+.button-white {
+    background-color: white;
 }
 
 .black{
     background-color: gray;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
 
-#logo {
-    width: 10%;
-    margin: 0 45%;
-    left: 0;
-    top: 5vh;
-    opacity: 0.8;
-    position: absolute;   
-}
 
 
 
@@ -152,14 +200,6 @@ h2 span {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.topnav {
-    margin: 5vh auto;
-    width: 50%;
-    text-align: center;
-    height: 90vh;
-
-}
-
 .container {
     margin: auto;
     margin-top: 190px;
@@ -172,8 +212,9 @@ img {
     position: relative;
     z-index: 1;
     opacity: 0.1;
-    -webkit-transition: opacity 2s ease-in-out;
-    transition:         opacity 2s ease-in-out;
+    top: 100px;
+    -webkit-transition: opacity 2s ease-in-out, top 2s ease-in-out;
+    transition:         opacity 2s ease-in-out, top 2s ease-in-out;
     
 }
 
@@ -185,6 +226,7 @@ img {
 
 .inview-fade {
     opacity: 1;
+    top: 0;
 }
 
 .grayscale {
@@ -192,19 +234,7 @@ img {
     filter: grayscale(100%);
 }
 
-.button {
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    position: relative;
-    margin: 0 auto;
-    top: 90vh;
-    border-radius: 100%;
-}
 
-.button-white {
-    background-color: white;
-}
 
 
 
