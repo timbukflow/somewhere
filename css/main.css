@@ -105,7 +105,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-h1, p {
+h1, h2, p {
     font-family: "Times New Roman", Times, serif;
     font-size: 16px;
     letter-spacing: 0.75px;
@@ -118,6 +118,10 @@ h1, p {
 
 h1 span {
     color: rgb(180, 180, 180);  
+}
+
+h2 {
+    font-size: 40px;
 }
 
 p {
@@ -167,8 +171,9 @@ p {
     display: inline-block;
     position: relative;
     margin: 0px 10px;
-    top: 50px;
+    top: 0px;/*top: 50px;*/
     transition: top 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .secondnav:hover .button{
@@ -199,7 +204,7 @@ p {
     padding: 0px 10px;
 }
 
-/* === tooltip start === */
+/* === tooltip === */
 
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -215,6 +220,10 @@ p {
     visibility: visible;
 }
 
+.button:hover {
+    transform: scale(1.2);
+}
+
 /* ==========================================================================
    Container Main
    ========================================================================== */
@@ -222,6 +231,16 @@ p {
 .main-container {
     width: 80%;
     margin: 200px 10%;
+}
+
+/* ==========================================================================
+   Container Title Story
+   ========================================================================== */
+
+.container-title-story {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
 }
 
 /* ==========================================================================
