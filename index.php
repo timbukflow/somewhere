@@ -12,11 +12,20 @@
     </div>
     
     <div class="secondnav">
-        <a href="#" id="buttonshowroom" class="button tooltip">
-            <p class="tooltiptext">showroom</p>
-        </a>
-        <div id="buttongrid" class="button tooltip">
-            <p class="tooltiptext">grid</p>
+        <div class="button-container">
+            <a href="#" id="buttonshowroom" class="button tooltip">
+                <p class="tooltiptext">showroom</p>
+            </a>
+        </div>
+        <div class="button-container">
+            <div id="buttongrid" class="button tooltip">
+                <p class="tooltiptext">grid</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <div id="buttonsw" class="button tooltip">
+                <p class="tooltiptext">S/W</p>
+            </div>
         </div>
     </div>
     
