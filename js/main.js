@@ -3,14 +3,20 @@ $(document).ready(function () {
 //////////// Button Function ////////////
     
     $('#buttonshowroom').click(function() {
+        // Container Change //
         $('img').toggleClass('grayscale');
         $('body').toggleClass('background-gray');
-        $('#buttonshowroom').toggleClass('buttonred');
         $('.topnav').toggleClass('logowhite');
         $('.container-img a').children('img').toggleClass('grid-two');
         $('.data-hidden').toggle();
         $('.description').toggle();
+        // Button Change //
+        $('#buttonshowroom').toggleClass('buttonred');
+        $('#buttonshowroom').children().toggle();
+        $('#buttonshowroom').toggleClass('close');
     });
+    
+    
     
     $('a img').click(function() {
         $('img').removeClass('grayscale');

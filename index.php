@@ -13,17 +13,17 @@
     
     <div class="secondnav">
         <div class="button-container">
-            <a href="#" id="buttonshowroom" class="button tooltip">
+            <a href="#" id="buttonshowroom" class="button">
                 <p class="tooltiptext">showroom</p>
             </a>
         </div>
         <div class="button-container">
-            <div id="buttongrid" class="button tooltip">
+            <div id="buttongrid" class="button">
                 <p class="tooltiptext">grid</p>
             </div>
         </div>
         <div class="button-container">
-            <div id="buttonsw" class="button tooltip">
+            <div id="buttonsw" class="button">
                 <p class="tooltiptext">S/W</p>
             </div>
         </div>
