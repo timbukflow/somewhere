@@ -166,11 +166,12 @@ p {
     width: 24px;
     height: 24px;
     border-radius: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     position: relative;
     margin: 0px 10px;
     top: 0px;/*top: 50px;*/
-    transition: top 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out,
+                background-color 1s ease-in-out;
     display: inline-block;
     cursor: pointer;
 }
@@ -178,12 +179,12 @@ p {
 .button {
     width: 14px;
     height: 14px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
     border-radius: 100%;
     position: absolute;
     top: 5px;
     left: 5px;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 
@@ -232,27 +233,14 @@ p {
                 opacity 1s ease-in-out;
 }
 
-.close::after {
-    content: ' \002B';
-    bottom: -3px;
-    transform: rotate(-45deg);
-    position: absolute;
-    left: 2px;
-    color: white;
-}
-
 .button-container:hover .tooltiptext {
     visibility: visible;
     bottom: 70px;
     opacity: 1;
 }
 
-.button-container:hover .button {
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 18px;
-    height: 18px;
-    top: 3px;
-    left: 3px;
+.button-container:hover {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* ==========================================================================

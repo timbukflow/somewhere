@@ -13,7 +13,6 @@ $(document).ready(function () {
         // Button Change //
         $('#buttonshowroom').toggleClass('buttonred');
         $('#buttonshowroom').children().toggle();
-        $('#buttonshowroom').toggleClass('close');
     });
     
     
