@@ -11,8 +11,7 @@ $(document).ready(function () {
         $('.data-hidden').toggle();
         $('.description').toggle();
         // Button Change //
-        $('#buttonshowroom').toggleClass('buttonred');
-        $('#buttonshowroom').children().toggle();
+        $(this).toggleClass('buttonred');
     });
     
     
@@ -29,7 +28,7 @@ $(document).ready(function () {
     
     $('#buttongrid').click(function() {
         $('#buttongrid').toggleClass('buttonred');
-        $('.container-img').children('img').toggleClass('grid-two');
+        $('.container-img a').children('img').toggleClass('grid-two');
     });
     
 //////////// Scroll Img FadeIn Inview ////////////
